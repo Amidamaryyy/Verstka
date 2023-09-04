@@ -15,20 +15,42 @@ body {
     position: static;
 }
 
+textarea {
+    margin-bottom: 24px;
+    width: 614px;
+    height: 43px;
+    resize: none;
+    color: var(--unnamed, #737373);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    /* 43.2px */
+    border: none;
+}
 
 .cities__dropdown-menu {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
     display: inline-flex;
     align-items: center;
     gap: 8px;
     color: var(--unnamed, #D3232A);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 180%;
     /* 43.2px */
     border: none;
     border-bottom-style: dashed;
+    border-bottom-color: rgba(255, 0, 0, 0.201);
     background-color: inherit;
+}
+
+.cities__dropdown-menu option {
+    color: #000;
+}
+
+.cities__dropdown-menu option:checked {
+    color: var(--unnamed, #D3232A);
 }
 
 .dropdown-menu::target-text {
@@ -66,7 +88,17 @@ h1 {
     grid-column-gap: 56px;
 }
 
-textarea {
+form {
+    margin-top: 24px;
+    border-bottom-style: inset;
+}
+
+.email-form {
+    border-bottom-color: #D3232A;
+}
+
+input {
+    margin-bottom: 24px;
     width: 403px;
     height: 43px;
     resize: none;
@@ -80,7 +112,6 @@ textarea {
 }
 
 .email-header {
-    margin-top: 40px;
     display: flex;
     width: 83px;
     height: 20px;
@@ -98,14 +129,22 @@ textarea {
     opacity: 0.6;
 }
 
-.email-text {
-    width: 614px;
-    color: var(--unnamed, #000);
+.email-address {
+    display: flex;
+    width: 463px;
+    height: 32px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #D3232A;
+    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 180%;
-    margin-bottom: 24px;
+    line-height: 140%;
+    text-decoration: none;
+    margin-bottom: 16px;
+    /* 33.6px */
 }
 
 .map {
@@ -128,13 +167,9 @@ textarea {
     border-style: none;
 }
 
-hr {
-    color: #F4F5F7;
-}
 
 .self-description__textarea {
-    margin-top: 40px;
-    margin-bottom: 179px;
+    height: 149px;
     color: var(--unnamed, #737373);
     font-size: 24px;
     font-style: normal;
@@ -156,6 +191,35 @@ hr {
     cursor: pointer;
     outline: none;
     text-decoration: none;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.custom-checkbox:checked+label::before {
+    background-image: url("public/images/check.png");
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
 }
 
 .input-file input[type=file] {
@@ -190,7 +254,21 @@ hr {
     font-style: normal;
     font-weight: 800;
     line-height: 140%;
+    text-decoration: none;
     /* 33.6px */
+}
+
+.telephone-link {
+    width: 528px;
+    color: var(--unnamed, #000);
+    font-feature-settings: 'clig' off, 'liga' off;
+    text-decoration: none;
+    /* H2 */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%;
+    /* 72px */
 }
 
 .working-hours {
@@ -198,10 +276,13 @@ hr {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 180%; /* 28.8px */
+    line-height: 180%;
+    /* 28.8px */
 }
+
 .input-checkbox {
     width: 483px;
+    height: 38px;
     display: inline-flex;
     align-items: center;
     gap: 16px;
@@ -216,7 +297,7 @@ hr {
     text-decoration: none;
 }
 
-.input-checkbox a{
+.input-checkbox a {
     color: #D3232A;
 }
 
@@ -248,21 +329,21 @@ hr {
 .input-file-btn {
     width: 614px;
     height: 64px;
-	position: relative;
-	cursor: pointer;
-	outline: none;
-	text-decoration: none;
-	font-size: 14px;
-	vertical-align: middle;
-	color: rgb(255 255 255);
-	text-align: center;
-	border-radius: 8px;
-	background: var(--unnamed, #D3232A);
-	line-height: 22px;
-	height: 40px;
-	padding: 10px 20px;
-	box-sizing: border-box;
-	border: none;
-	margin: 0;
-	transition: background-color 0.2s;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 8px;
+    background: var(--unnamed, #D3232A);
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.2s;
 }

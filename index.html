@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
 <body>
@@ -19,40 +19,50 @@
         <br>
         <div class="grid-div">
             <div>
-                <textarea placeholder="Как вас зовут?"></textarea>
-                <hr>
-                <h3 class="email-header">Ваш E-mail</h3>
-                <textarea class="email-text" placeholder="Ваш E-mail"></textarea>
-                <hr color="#D3232A">
-                <select name="vacancy" id="vacancy" class="vacancy__dropdown-menu">
-                    <option>Верстальщик</option>
-                </select>
-                <hr>
-                <textarea class="self-description__textarea" placeholder="Напишите о себе кратко"></textarea>
+                <form>
+                    <input placeholder="Как вас зовут?">
+                </form>
+                <form class="email-form">
+                    <h3 class="email-header">Ваш E-mail</h3>
+                    <input class="email-text" placeholder="Ваш E-mail" />
+                </form>
+                <form>
+                    <select name="vacancy" id="vacancy" class="vacancy__dropdown-menu">
+                        <option>Верстальщик</option>
+                    </select>
+                </form>
+                <form>
+                    <textarea class="self-description__textarea" placeholder="Напишите о себе кратко"></textarea>
+                </form>
                 <label class="input-file">
                     <input type="file" name="file">
-                    <span><img src="/public/images/icons-paperclip.svg" />Прикрепить документы</span>
+                    <span><img src="public/images/icons-paperclip.svg" />Прикрепить документы</span>
+                </label>
+                <label class="input-checkbox">
+                    <input class="custom-checkbox" type="checkbox" id="checkbox"/>
+                    <label for="checkbox"></label>
+                    <span>
+                        <p>Я соглашаюсь с <a href="">политикой конфиденциальности</a>, нажимая на кнопку “Откликнуться”</p>
+                    </span>
+                </label>
+                <br>
+                <label class="input-submit">
+                    <input type="button" class="submit" />
+                    <span class="input-file-btn">Откликнуться</span>
                 </label>
             </div>
             <div>
-                <img src="/public/images/unnamed.png" width="578px" height="440px" />
+                <img src="public/images/unnamed.png" width="578px" height="440px" />
                 <div>
                     <h3 class="contacts-text">Контакты:</h3>
-                    <h2>+7 495 929-70-78</h2>
-                    <h3 class="email-text">welcome@ret-team.su</h3>
+                    <a class="telephone-link" href="tel:+74959297078">+7 495 929-70-78</a>
+                    <a href="mailto:welcome@ret-team.su" class="email-address">welcome@ret-team.su</a>
                     <h4 class="working-hours">Мы работаем в будни с 9:00 до 18:00.</h4>
                 </div>
             </div>
         </div>
-        <label class="input-checkbox">
-            <input type="checkbox" />
-            <span><p>Я соглашаюсь с <a href="">политикой конфиденциальности</a>, нажимая на кнопку “Откликнуться”</p></span>
-        </label>
-        <br>
-        <label class="input-submit">
-            <input type="button" class="submit"/>
-            <span class="input-file-btn">Откликнуться</span>
-        </label>
+
     </div>
 </body>
+
 </html>
