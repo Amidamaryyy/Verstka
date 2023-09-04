@@ -57,7 +57,7 @@ textarea {
     color: var(--unnamed, #000)
 }
 
-h2 {
+h1 {
     width: 528px;
     color: var(--unnamed, #000);
     font-feature-settings: 'clig' off, 'liga' off;
@@ -70,7 +70,7 @@ h2 {
     /* 72px */
 }
 
-h1 {
+h2 {
     color: var(--unnamed, #000);
     font-feature-settings: 'clig' off, 'liga' off;
 
