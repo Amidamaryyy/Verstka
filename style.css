@@ -13,3 +13,32 @@ body {
     width: 1248px;
     margin: auto;
 }
+
+.tittle{
+    width: 528px;
+color: var(--, #000);
+font-feature-settings: 'clig' off, 'liga' off;
+/* H2 */
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 180%; /* 72px */
+}
+
+.bottomrow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 56px;
+}
+.leftside * {
+    margin-bottom: 24px;
+    width: 614px;
+    border: none;
+    
+}
+
+.form input.nametext, select.vacancy__dropdown-menu, input.email-text{
+    margin-top: 24px;
+    border-bottom-style: inset;
+}
