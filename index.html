@@ -7,61 +7,55 @@
 </head>
 
 <body>
-    <div>
-        <h1>Отправьте ваше резюме</h1>
-        <h2>Постройте своё будущее c РусЭлитТрейдинг в городе
-            <select name="cities-to-choose" class="cities__dropdown-menu">
-                <option>Нижний Новгород</option>
-                <option>Москва</option>
-                <option>Тула</option>
-            </select>
-        </h2>
-        <br>
-        <div class="grid-div">
+    <div class="container">
+        <div class="toprow">   
+            <h1 class="tittle">Отправьте ваше резюме</h1>
             <div>
-                <form>
+                <span>Постройте своё будущее c РусЭлитТрейдинг в городе</span>
+                <select name="cities-to-choose" class="cities__dropdown-menu">
+                    <option>Нижний Новгород</option>
+                    <option>Москва</option>
+                    <option>Тула</option>
+                </select>
+            </div>
+        </div>
+        <div class="bottomrow">
+            <div class="leftside">
+                <form class="form">
                     <input placeholder="Как вас зовут?">
-                </form>
-                <form class="email-form">
-                    <h3 class="email-header">Ваш E-mail</h3>
                     <input class="email-text" placeholder="Ваш E-mail" />
-                </form>
-                <form>
                     <select name="vacancy" id="vacancy" class="vacancy__dropdown-menu">
                         <option>Верстальщик</option>
                     </select>
-                </form>
-                <form>
                     <textarea class="self-description__textarea" placeholder="Напишите о себе кратко"></textarea>
+                    <label class="input-file">
+                        <input type="file" name="file">
+                        <span><img src="public/images/icons-paperclip.svg" />Прикрепить документы</span>
+                    </label>
+                    <label class="input-checkbox">
+                        <input class="custom-checkbox" type="checkbox" id="checkbox"/>
+                        <label for="checkbox"></label>
+                        <span>
+                            <p>Я соглашаюсь с <a href="">политикой конфиденциальности</a>, нажимая на кнопку “Откликнуться”</p>
+                        </span>
+                    </label>
+                    <br>
+                    <label class="input-submit">
+                        <input type="button" class="submit" />
+                        <span class="input-file-btn">Откликнуться</span>
+                    </label>
                 </form>
-                <label class="input-file">
-                    <input type="file" name="file">
-                    <span><img src="public/images/icons-paperclip.svg" />Прикрепить документы</span>
-                </label>
-                <label class="input-checkbox">
-                    <input class="custom-checkbox" type="checkbox" id="checkbox"/>
-                    <label for="checkbox"></label>
-                    <span>
-                        <p>Я соглашаюсь с <a href="">политикой конфиденциальности</a>, нажимая на кнопку “Откликнуться”</p>
-                    </span>
-                </label>
-                <br>
-                <label class="input-submit">
-                    <input type="button" class="submit" />
-                    <span class="input-file-btn">Откликнуться</span>
-                </label>
             </div>
-            <div>
+            <div class="rightside">
                 <img src="public/images/unnamed.png" width="578px" height="440px" />
                 <div>
                     <h3 class="contacts-text">Контакты:</h3>
                     <a class="telephone-link" href="tel:+74959297078">+7 495 929-70-78</a>
                     <a href="mailto:welcome@ret-team.su" class="email-address">welcome@ret-team.su</a>
-                    <h4 class="working-hours">Мы работаем в будни с 9:00 до 18:00.</h4>
+                    <a class="working-hours">Мы работаем в будни с 9:00 до 18:00.</a>
                 </div>
             </div>
         </div>
-
     </div>
 </body>
 
