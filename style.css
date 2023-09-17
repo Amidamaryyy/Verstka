@@ -1,44 +1,85 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Montserrat;
+.block {
+    width: 200px;
+    height: 600px;
+    background-color: rgb(196, 192, 192);
+    border-radius: 30px;
+
+
 }
 
-body {
-    background: #FFF;
+.block input {
+    outline: none;
 }
 
-.container{
-    width: 1248px;
-    margin: auto;
+.red-ball {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: black;
+    margin-left: 10%;
+    margin-top: 50px;
 }
 
-.tittle{
-    width: 528px;
-color: var(--, #000);
-font-feature-settings: 'clig' off, 'liga' off;
-/* H2 */
-font-family: Montserrat;
-font-size: 40px;
-font-style: normal;
-font-weight: 500;
-line-height: 180%; /* 72px */
+.yellow-ball {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: black;
+    margin-left: 10%;
+    margin-top: 10%;
 }
 
-.bottomrow{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 56px;
+.green-ball {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: black;
+    margin-left: 10%;
+    margin-top: 10%;
+    outline: none;
+
+
 }
-.leftside * {
-    margin-bottom: 24px;
-    width: 614px;
-    border: none;
+
+.green-ball:focus {
+    background-color: green;
+
+}
+
+.yellow-ball:focus {
+    background-color: yellow;
+
+}
+
+.red-ball:focus {
+    background-color: red;
+
+}
+
+.coutainer {
+    display: flex;
+   
+
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    background-color: black;
+    color: white;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 200px;
+    border-radius: 10%;
+    text-align: center; 
+   
+    padding-bottom: 20px;
+
     
 }
 
-.form input.nametext, select.vacancy__dropdown-menu, input.email-text{
-    margin-top: 24px;
-    border-bottom-style: inset;
+.text-block label{
+    padding-top: 30px;
+
 }

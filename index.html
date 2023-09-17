@@ -7,54 +7,19 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="toprow">   
-            <h1 class="tittle">Отправьте ваше резюме</h1>
-            <div>
-                <span>Постройте своё будущее c РусЭлитТрейдинг в городе</span>
-                <select name="cities-to-choose" class="cities__dropdown-menu">
-                    <option>Нижний Новгород</option>
-                    <option>Москва</option>
-                    <option>Тула</option>
-                </select>
-            </div>
+    <div class="coutainer">
+
+
+        <div class="block">
+            <input id="red-ball" class="red-ball"></input>
+            <input id="yellow-ball" class="yellow-ball"></input>
+            <input id="green-ball" class="green-ball"></input>
         </div>
-        <div class="bottomrow">
-            <div class="leftside">
-                <form class="form">
-                    <input placeholder="Как вас зовут?" class="nametext">
-                    <input class="email-text" placeholder="Ваш E-mail" />
-                    <select name="vacancy" id="vacancy" class="vacancy__dropdown-menu">
-                        <option>Верстальщик</option>
-                    </select>
-                    <textarea class="self-description__textarea" placeholder="Напишите о себе кратко"></textarea>
-                    <label class="input-file">
-                        <input type="file" name="file">
-                        <span><img src="public/images/icons-paperclip.svg" />Прикрепить документы</span>
-                    </label>
-                    <label class="input-checkbox">
-                        <input class="custom-checkbox" type="checkbox" id="checkbox"/>
-                        <label for="checkbox"></label>
-                        <span>
-                            <p>Я соглашаюсь с <a href="">политикой конфиденциальности</a>, нажимая на кнопку “Откликнуться”</p>
-                        </span>
-                    </label>
-                    <br>
-                    <label class="input-submit">
-                        <input type="button" class="input-submit" value=“Откликнуться”/>
-                        
-                    </label>
-                </form>
-            </div>
-            <div class="rightside">
-                <img src="public/images/unnamed.png" width="578px" height="440px" />
-                <div>
-                    <h3 class="contacts-text">Контакты:</h3>
-                    <a class="telephone-link" href="tel:+74959297078">+7 495 929-70-78</a>
-                    <a href="mailto:welcome@ret-team.su" class="email-address">welcome@ret-team.su</a>
-                    <a class="working-hours">Мы работаем в будни с 9:00 до 18:00.</a>
-                </div>
-            </div>
+
+        <div class="text-block">
+            <label for="red-ball">Включить красный</label>
+            <label for="yellow-ball">Включить желтый</label>
+            <label for="green-ball">Включить зеленый</label>
         </div>
     </div>
 </body>
