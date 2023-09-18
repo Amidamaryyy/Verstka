@@ -22,41 +22,71 @@
         <div class="bottomrow">
             <div class="leftside">
                 <form class="form">
-                    <input placeholder="Как вас зовут?" class="nametext">
-                    <input class="email-text" placeholder="Ваш E-mail" />
-                    <select name="vacancy" id="vacancy" class="vacancy__dropdown-menu">
+                    <input class="forminput" placeholder="Как вас зовут?" />
+                    <input class="forminput" placeholder="Ваш E-mail" />
+                    <!-- <input class="forminput" placeholder="Выберите вакансию" /> -->
+                    <select name="vacancy" id="vacancy" class="vacancy-choice">
+                        <option>Верстальщик</option>
+                        <option>Верстальщик</option>
+                        <option>Верстальщик</option>
                         <option>Верстальщик</option>
                     </select>
-                    <textarea class="self-description__textarea" placeholder="Напишите о себе кратко"></textarea>
-                    <label class="input-file">
-                        <input type="file" name="file">
-                        <span><img src="public/images/icons-paperclip.svg" />Прикрепить документы</span>
+                    <textarea class="formtextaria" placeholder="Напишите о себе кратко"></textarea>
+                    <label class="choise-file">
+                        <input class="choise-file__input" type="file" name="file">
+                        <span class="choise-file__text">
+                            <img src="public/images/icons-paperclip.svg" class="choise-file__icon"/>
+                            Прикрепить документы
+                        </span>
                     </label>
                     <label class="input-checkbox">
                         <input class="custom-checkbox" type="checkbox" id="checkbox"/>
-                        <label for="checkbox"></label>
+                      
                         <span>
-                            <p>Я соглашаюсь с <a href="">политикой конфиденциальности</a>, нажимая на кнопку “Откликнуться”</p>
+                            <p class="text-checkbox">Я соглашаюсь с <a href="">политикой конфиденциальности</a>, нажимая на кнопку “Откликнуться”</p>
                         </span>
                     </label>
-                    <br>
-                    <label class="input-submit">
-                        <input type="button" class="input-submit" value=“Откликнуться”/>
-                        
-                    </label>
+                     <button type="button" class="input-submit">Откликнуться</button>
                 </form>
             </div>
             <div class="rightside">
-                <img src="public/images/unnamed.png" width="578px" height="440px" />
-                <div>
-                    <h3 class="contacts-text">Контакты:</h3>
-                    <a class="telephone-link" href="tel:+74959297078">+7 495 929-70-78</a>
-                    <a href="mailto:welcome@ret-team.su" class="email-address">welcome@ret-team.su</a>
-                    <a class="working-hours">Мы работаем в будни с 9:00 до 18:00.</a>
+                
+                <div class="background-picture"></div> 
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa95fd430bb8a9eb72bf96854560764f8e30a2c8c1cf5c09aeba0d4c3511cb7b0&amp;source=constructor" width="578" height="440" frameborder="0">
+                </iframe>
+                <div class="contacts">
+                    <div class="contacts-title">Контакты:</div>
+                    <a class="contacts-telephone contacts-block" href="tel:+74959297078">+7 495 929-70-78</a>
+                    <a href="mailto:welcome@ret-team.su" class="contacts-email contacts-block">welcome@ret-team.su</a>
+                    <span class="contacts-text contacts-block">Мы работаем в будни с 9:00 до 18:00.</span>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+        <div class="samtext">
+            <p>
+                Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному фонду «Луч Добра». Благодаря их труду ежегодно сотни питомцев находят свой новый дом.
 
+                ПОМОГИ И ТЫ
+            </p>
+            <a href="#">тест </a> 
+            <p>
+                Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному фонду «Луч Добра». Благодаря их труду ежегодно сотни питомцев находят свой новый дом.
+
+                ПОМОГИ И ТЫ
+            </p>
+            <p>
+                Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному фонду «Луч Добра». Благодаря их труду ежегодно сотни питомцев находят свой новый дом.
+
+                ПОМОГИ И ТЫ
+            </p>
+
+        </div>
+        <div class="block-all">
+            <div class="red-block br-50"></div>
+            <div class="yellow-block br-50"></div>
+            <div class="green-block br-50"></div>
+        </div>
+    </div>
+    
+</body>
 </html>
